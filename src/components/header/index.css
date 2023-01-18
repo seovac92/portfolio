@@ -1,0 +1,163 @@
+.typing{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+}
+.name::before{
+content: '';
+animation: name 2s 1s step-end forwards;
+}
+@keyframes name{
+0%  { content: '|'; }
+5%  { content: ''; }
+10%  { content: 'N|'; }
+15%  { content: 'N'; }
+20%  { content: 'Na|'; }
+25%  { content: 'Na'; }
+30%  { content: 'Nam|'; }
+35%  { content: 'Nam'; }
+40%  { content: 'Name|'; }
+45%  { content: 'Name'; }
+50% { content: 'Name: |'; }
+55% { content: 'Name: '; }
+60% { content: 'Name: M|'; }
+65% { content: 'Name: M'; }
+70% { content: 'Name: Ma| '; }
+75% { content: 'Name: Ma'; }
+80% { content: 'Name: Mar|'; }
+85% { content: 'Name: Mar'; }
+90% { content: 'Name: Mark|'; }
+93% { content: 'Name: Mark'; }
+96% { content: 'Name: Marko|'; }
+99% { content: 'Name: Marko|'; }
+100% { content: 'Name: Marko'; }
+}
+.surname::before{
+content: '';
+animation: surname 2s 3s step-end forwards;
+}
+@keyframes surname{
+0%  { content: '|'; }
+4%  { content: ''; }
+8%  { content: 'S|'; }
+12%  { content: 'S'; }
+16%  { content: 'Su|'; }
+20%  { content: 'Su'; }
+24%  { content: 'Sur|'; }
+28%  { content: 'Sur'; }
+32%  { content: 'Surn|'; }
+36%  { content: 'Surn'; }
+40% { content: 'Surna|'; }
+44% { content: 'Surna'; }
+48% { content: 'Surnam|'; }
+52% { content: 'Surnam'; }
+56% { content: 'Surname: | '; }
+60% { content: 'Surname: '; }
+64% { content: 'Surname: S|'; }
+68% { content: 'Surname: S'; }
+72% { content: 'Surname: Se|'; }
+76% { content: 'Surname: Se'; }
+80% { content: 'Surname: Seo|'; }
+84% { content: 'Surname: Seo'; }
+88% { content: 'Surname: Seov|'; }
+91% { content: 'Surname: Seov'; }
+94% { content: 'Surname: Seova|'; }
+97% { content: 'Surname: Seova'; }
+99% { content: 'Surname: Seovac|'; }
+100% { content: 'Surname: Seovac'; }
+}
+.born::before{
+content: '';
+animation: born 5s 5s step-end forwards;
+}
+@keyframes born{
+0%  { content: '|'; }
+2%  { content: ''; }
+4%  { content: 'B|'; }
+6%  { content: 'B'; }
+8%  { content: 'Bo|'; }
+10%  { content: 'Bo'; }
+12%  { content: 'Bor|'; }
+14%  { content: 'Bor'; }
+16%  { content: 'Born|'; }
+18%  { content: 'Born'; }
+20% { content: 'Born: |'; }
+22% { content: 'Born: '; }
+24% { content: 'Born: 0|'; }
+26% { content: 'Born: 0'; }
+28% { content: 'Born: 03| '; }
+30% { content: 'Born: 03.'; }
+32% { content: 'Born: 03.1|'; }
+34% { content: 'Born: 03.1'; }
+36% { content: 'Born: 03.12|'; }
+38% { content: 'Born: 03.12'; }
+40% { content: 'Born: 03.12.|'; }
+42% { content: 'Born: 03.12.'; }
+44% { content: 'Born: 03.12.2|'; }
+46% { content: 'Born: 03.12.2'; }
+48% { content: 'Born: 03.12.20|'; }
+50% { content: 'Born: 03.12.20'; }
+52% { content: 'Born: 03.12.200|'; }
+54% { content: 'Born: 03.12.200'; }
+56% { content: 'Born: 03.12.2002|'; }
+58% { content: 'Born: 03.12.2002'; }
+60% { content: 'Born: 03.12.200|'; }
+62% { content: 'Born: 03.12.200'; }
+64% { content: 'Born: 03.12.20|'; }
+66% { content: 'Born: 03.12.20'; }
+68% { content: 'Born: 03.12.2|'; }
+70% { content: 'Born: 03.12.2'; }
+72% { content: 'Born: 03.12.|'; }
+74% { content: 'Born: 03.12.'; }
+76% { content: 'Born: 03.12.1|'; }
+78% { content: 'Born: 03.12.1'; }
+82% { content: 'Born: 03.12.19|'; }
+86% { content: 'Born: 03.12.19'; }
+90% { content: 'Born: 03.12.199|'; }
+94% { content: 'Born: 03.12.199'; }
+97% { content: 'Born: 03.12.1992|'; }
+100% { content: 'Born: 03.12.1992'; }
+}
+.profession::before{
+content: '';
+animation: profession 4s 10s step-end forwards;
+}
+@keyframes profession{
+0%  { content: '|'; }
+3%  { content: ''; }
+6%  { content: 'P|'; }
+9%  { content: 'P'; }
+12%  { content: 'Pr|'; }
+14%  { content: 'Pr'; }
+17%  { content: 'Pro|'; }
+19%  { content: 'Pro'; }
+22%  { content: 'Prof|'; }
+25%  { content: 'Prof'; }
+28% { content: 'Profe|'; }
+31% { content: 'Profe'; }
+34% { content: 'Profes|'; }
+37% { content: 'Profes'; }
+40% { content: 'Profess| '; }
+43% { content: 'Professi'; }
+47% { content: 'Professio|'; }
+50% { content: 'Professio'; }
+53% { content: 'Profession|'; }
+56% { content: 'Profession: '; }
+59% { content: 'Profession: D|'; }
+62% { content: 'Profession: D'; }
+64% { content: 'Profession: De|'; }
+66% { content: 'Profession: De'; }
+69% { content: 'Profession: Dev|'; }
+72% { content: 'Profession: Dev'; }
+75% { content: 'Profession: Deve|'; }
+78% { content: 'Profession: Deve'; }
+81% { content: 'Profession: Devel|'; }
+83% { content: 'Profession: Devel'; }
+86% { content: 'Profession: Develo|'; }
+88% { content: 'Profession: Develo'; }
+91% { content: 'Profession: Develop|'; }
+93% { content: 'Profession: Develop'; }
+95% { content: 'Profession: Develope|'; }
+97% { content: 'Profession: Develope'; }
+99% { content: 'Profession: Developer|'; }
+100% { content: 'Profession: Developer'; }
+}
