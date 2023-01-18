@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+.typing-h1{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.typing-h1::before{
+  content: '';
+  animation: text 15s step-end infinite;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes text{
+  0%  { content: ''; }
+    20% { content: 'I'; }
+    23% { content: 'I a'; }
+    26% { content: 'I am'; }
+    28% { content: 'I am M'; }
+    30% { content: 'I am Ma'; }
+    32% { content: 'I am Mar'; }
+    35% { content: 'I am Mark'; }
+    37% { content: 'I am Marko'; }
+    40% { content: 'I am Marko S'; }
+    42% { content: 'I am Marko Se'; }
+    44% { content: 'I am Marko Seo'; }
+    50% { content: 'I am Marko Seov'; }
+    51% { content: 'I am Marko Seova'; }
+    52% { content: 'I am Marko Seovac'; }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.typing-h1::after{
+  content: '';
+  display: inline-block;
+  width: 0.1em;
+  height: 0.75em;
+  margin-left: 0.1em;
+  background-color: #000;
+  animation: blink 0.75s ease-in-out infinite;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes blink {
+  0%, 25%, 100% { opacity: 1; }
+  50%, 75% { opacity: 0; }
 }
