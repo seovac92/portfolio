@@ -5,6 +5,16 @@
 }
 body {
   margin: 0;
+  background-color: #020204;
+  color: #22b455;
+  text-shadow: 0 0 10px #22b455;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
 }
