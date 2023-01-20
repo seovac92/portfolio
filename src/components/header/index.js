@@ -5,11 +5,14 @@ import {faHtml5, faCss3Alt, faJs, faNodeJs, faVuejs, faReact} from '@fortawesome
 const Header = () => {
     return (
         <header>
-            <div className='head-typing'>
-                <div className="typing name"></div>
-                <div className="typing surname"></div>
-                <div className="typing born"></div>
-                <div className="typing profession"></div>
+            <div className="bio">
+                <div className="profile-img"></div>
+                <div className='head-typing'>
+                    <div className="typing name"></div>
+                    <div className="typing surname"></div>
+                    <div className="typing born"></div>
+                    <div className="typing profession"></div>
+                </div>
             </div>
             <div className="scene">
                 <div className="cube">

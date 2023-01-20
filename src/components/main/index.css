@@ -4,3 +4,24 @@
 .main h1{
     text-align: center;
 }
+.keyboard-image{
+    font-size: 50px;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+}
+.keyboard-image span{
+    display: block;
+    align-self: flex-end;
+}
+.keyboard-image::before{
+    content: '\\(•_•)';
+}
+.keyboard-image::after{
+    content: '/ \\';
+    display: block;
+    align-self: center;
+    transform: translateX(15px);
+}
