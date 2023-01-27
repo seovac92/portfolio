@@ -10,8 +10,8 @@ header{
     flex-direction: column;
     align-self: center;
     align-items: center;
-    margin: 50px auto;
-    width: 80%;
+    margin: 70px auto;
+    flex-basis: 50%;
 }
 
 /* profile image */
@@ -37,7 +37,7 @@ header{
     height: 8px;
     border-radius: 4px;
     background-color: rgba(34,180,85,0.68);
-    animation: scanningTop 4s ease infinite;
+    animation: scanningTop 2s ease infinite;
 }
 .profile-img::after{
     position: absolute;
@@ -114,16 +114,25 @@ header{
 /* profile image */
 .head-typing{
     width: 100%;
-    min-height: 150px;
+    min-height: 180px;
     text-align: center;
 }
 .typing{
+    width: fit-content;
+    margin: 0 auto;
     font-family: 'Orbitron', sans-serif;
     font-size: 24px;
+    transition: 0.3s all ease;
+}
+.typing:hover{
+    background-color: var(--primaryColor);
+    color: #000;
 }
 .name::before{
-content: '';
-animation: name 2s 3s step-end forwards;
+    display: inline-block;
+    padding: 5px;
+    content: '';
+    animation: name 2s 3s step-end forwards;
 }
 @keyframes name{
 0%  { content: '|'; }
@@ -151,8 +160,10 @@ animation: name 2s 3s step-end forwards;
 100% { content: 'Name: Marko'; }
 }
 .surname::before{
-content: '';
-animation: surname 2s 5s step-end forwards;
+    display: inline-block;
+    padding: 5px;
+    content: '';
+    animation: surname 2s 5s step-end forwards;
 }
 @keyframes surname{
 0%  { content: '|'; }
@@ -185,8 +196,10 @@ animation: surname 2s 5s step-end forwards;
 100% { content: 'Surname: Seovac'; }
 }
 .born::before{
-content: '';
-animation: born 5s 7s step-end forwards;
+    display: inline-block;
+    padding: 5px;
+    content: '';
+    animation: born 5s 7s step-end forwards;
 }
 @keyframes born{
 0%  { content: '|'; }
@@ -237,8 +250,10 @@ animation: born 5s 7s step-end forwards;
 100% { content: 'Born: 03.12.1992'; }
 }
 .profession::before{
-content: '';
-animation: profession 4s 12s step-end forwards;
+    display: inline-block;
+    padding: 5px;
+    content: '';
+    animation: profession 4s 12s step-end forwards;
 }
 @keyframes profession{
 0%  { content: '|'; }

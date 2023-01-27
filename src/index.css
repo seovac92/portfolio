@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
-
+:root{
+  --primaryColor: #22b455;
+}
 *{
   box-sizing: border-box;
 }
 body {
   margin: 0;
   background-color: #020204;
-  color: #22b455;
+  color: var(--primaryColor);
   font-family: 'Orbitron', sans-serif;
-  text-shadow: 0 0 10px #22b455;
+  text-shadow: 0 0 10px var(--primaryColor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,4 +20,14 @@ body {
   left: 0;
   z-index: -1;
   width: 100%;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  height: inherit;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--primaryColor);
+  outline: 1px solid var(--primaryColor);
 }

@@ -4,7 +4,7 @@ import {faHtml5, faCss3Alt, faJs, faNodeJs, faVuejs, faReact} from '@fortawesome
 
 const Header = () => {
     return (
-        <header>
+        <header className="">
             <div className="bio">
                 <div className="profile-img"></div>
                 <div className='head-typing'>
