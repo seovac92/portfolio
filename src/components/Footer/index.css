@@ -1,0 +1,22 @@
+footer{
+    position: fixed;
+    width: fit-content;
+    left: 50%;
+    bottom: -110px;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #030303;
+    transition: 0.3s all ease;
+    padding: 10px 20px;
+}
+footer a{
+    display: block;
+    padding: 10px;
+}
+footer:hover{
+    bottom: 0;
+}
+.footer-container{
+    width: fit-content;
+    margin: 0 auto;
+}

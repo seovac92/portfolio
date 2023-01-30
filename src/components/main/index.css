@@ -1,3 +1,6 @@
+.main{
+    padding-bottom: 100px;
+}
 .border{
     overflow: hidden;
 }
@@ -45,8 +48,44 @@ a:hover{
     background-color: var(--primaryColor);
     color: #000;
 }
-
-
+.skills{
+    overflow: hidden;
+}
+.logo-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.logo-container img{
+    display: inline-block;
+    padding: 20px;
+    opacity: 0.3;
+    filter: grayscale(100%);
+    transform: translateZ(-50px);
+    transition: 0.5s all ease;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid;
+    box-shadow: 0 0 50px;
+}
+.logo-container img:hover{
+    transform: translateZ(0);
+    background-color: #000;
+    opacity: 1;
+    filter: grayscale(0%);
+}
+@media screen and (min-width: 768px){
+    .logo-container img{
+        padding: 50px;
+        transform: translateZ(-100px);
+    }
+}
 @media screen and (min-width: 992px){
     .content{
         width: 60%;
@@ -77,6 +116,10 @@ a:hover{
     .content,
     .big-content{
         width: 1000px;
+    }
+    .logo-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        min-height: auto;
     }
 }
 @media screen and (min-width: 1600px){
