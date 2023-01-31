@@ -34,8 +34,8 @@ const Main = () =>{
                 <div className="content">
                     <div className="wrapper">
                         <h1 className='title'>&gt;&nbsp;About&nbsp;me&nbsp;&lt;</h1>
-                        <p>I'm a frontend developer based in Belgrade, Serbia with the plan to become a full stack developer.</p>
-                        <p>Always searching for new knowledge and ideas.</p>
+                        <p>I am a JavaScript certified developer based in Belgrade, Serbia who is always looking for new knowledge.</p>
+                        <p>Check out my projects below and feel free to contact me if you need my skills.</p>
                     </div>
                 </div>
             </section>
@@ -104,7 +104,7 @@ const Main = () =>{
                         </div>
                         <div className="project">
                             {currentProject && <div className="project-description">
-                            <h3 className="project-title">{currentProject.title}</h3>
+                            <h3 className="project-title" style={{textDecoration: "underline"}}>{currentProject.title}</h3>
                             <p className="project-text">{currentProject.description}</p>
                             <p>{currentProject.developed}</p>
                             <ul>{currentProject.list.map((el,idx)=>{
