@@ -67,7 +67,7 @@ a:hover{
     padding: 20px;
     opacity: 0.3;
     filter: grayscale(100%);
-    transform: translateZ(-50px);
+    transform: translateZ(0px);
     transition: 0.5s all ease;
     cursor: pointer;
     border-radius: 8px;
@@ -75,7 +75,7 @@ a:hover{
     box-shadow: 0 0 50px;
 }
 .logo-container img:hover{
-    transform: translateZ(0);
+    transform: translateZ(20px);
     background-color: #000;
     opacity: 1;
     filter: grayscale(0%);
@@ -83,7 +83,7 @@ a:hover{
 @media screen and (min-width: 768px){
     .logo-container img{
         padding: 50px;
-        transform: translateZ(-100px);
+        transform: translateZ(0px);
     }
 }
 @media screen and (min-width: 992px){
